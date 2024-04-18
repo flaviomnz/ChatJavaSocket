@@ -1,0 +1,6 @@
+FROM ubuntu:latest
+RUN apt -y update
+RUN apt install -y net-tools inetutils-ping
+RUN apt install -y default-jdk
+RUN mkdir /app
+COPY ChatServer.jar /app/
