@@ -7,7 +7,7 @@ import java.io.IOException;
 public class ChatClient {
     public static void main(String[] args) {
         try {
-            Socket socket = new Socket("localhost", 4000);
+            Socket socket = new Socket("localhost", 4000); // O client vai conectar nessa porta ai (LOCALHOST: 127.0.0.1), porém, será substituido pelo IP GATEWAY DO DOCKER.
             BufferedReader input = new BufferedReader(new InputStreamReader(socket.getInputStream())); // Responsável por LER o que é enviado pelo outro lado
             PrintWriter output = new PrintWriter(socket.getOutputStream(), true); // Responsável por enviar a mensagem
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in)); // Responsável por ler as o que é digitado pelo usuário.

@@ -9,7 +9,7 @@ public class ChatServer {
     public static void main(String[] args) {
         try {
             // Socket do Servidor: Quando ligado, o servidor cria um SOCKET de espera por uma conexão.
-            ServerSocket serverSocket = new ServerSocket(4000); // Estabelecendo uma conexão na porta 5000
+            ServerSocket serverSocket = new ServerSocket(4000); // Estabelecendo uma conexão na porta 4000
             System.out.println("Servidor aguardando conexão...");
 
             Socket socket = serverSocket.accept(); // Aceitando a conexão do usuário, e quando é aceita, é criado outro SOCKET de comunicação com o cliente. 
